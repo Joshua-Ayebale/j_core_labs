@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | J-CORE LABS - Intelligent Innovation</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Ionicons Script CDN -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+        <ion-icon name="sparkles-outline"></ion-icon>
+        <span>Tech Support & Skills You Can Count On</span>
+        <span class="badge">J-CORE LABS</span>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <img src="assets/jcore-logo.png" alt="JCore Labs Logo Placeholder" class="logo-img">
+                </div>
+                J-Core Labs
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link active">Services</a></li>
+                <li><a href="academy.html" class="nav-link">J-Core Academy</a></li>
+                <li><a href="comingsoon.html" class="nav-link">Projects</a></li>
+                <li><a href="comingsoon.html" class="nav-link">Shop <span style="font-size: 0.7rem; color: var(--accent);">(Soon)</span></a></li>
+            </ul>
+
+            <div class="nav-cta">
+                <button class="btn btn-primary" onclick="openBookingModal('General Tech Inquiry')">
+                    <ion-icon name="flash-outline"></ion-icon>
+                    Get Support Today
+                </button>
+            </div>
+
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+                <ion-icon name="menu-outline" id="menuIcon"></ion-icon>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="mobile-drawer" id="mobileDrawer">
+        <a href="index.html" class="nav-link drawer-item">Home</a>
+        <a href="services.html" class="nav-link drawer-item">Services</a>
+        <a href="academy.html" class="nav-link drawer-item">J-Core Academy</a>
+        <a href="comingsoon.html" class="nav-link drawer-item">Projects</a>
+        <a href="comingsoon.html" class="nav-link drawer-item">Shop (Coming Soon)</a>
+        <button class="btn btn-primary" onclick="openBookingModal('General Tech Inquiry')" style="margin-top: 1rem;">
+            Get Support Today
+        </button>
+    </div>
+
+    <!-- Hero Banner -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="badge"><ion-icon name="construct-outline"></ion-icon> Professional Tech Services</span>
+            <h1>Comprehensive <span>Tech Solutions</span></h1>
+            <p>Empowering individuals, students, schools, and local businesses with reliable software development, computer maintenance, IoT innovation, and IT infrastructure.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Direct Contact Bar from Poster -->
+        <div class="poster-contact-bar">
+            <div class="contact-item">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+                <span>+256 7584 77051</span>
+            </div>
+            <div class="contact-item">
+                <ion-icon name="call-outline"></ion-icon>
+                <span>+256 3945 46952</span>
+            </div>
+            <div class="contact-item">
+                <ion-icon name="mail-outline"></ion-icon>
+                <span>info.jcorelabs@gmail.com</span>
+            </div>
+        </div>
+
+        <!-- Filter Tabs -->
+        <section class="filter-section">
+            <div class="filter-tabs">
+                <button class="tab-btn active" onclick="filterCategory('all', this)">
+                    <ion-icon name="grid-outline"></ion-icon> All Services
+                </button>
+                <button class="tab-btn" onclick="filterCategory('tech-support', this)">
+                    <ion-icon name="build-outline"></ion-icon> Tech Support & Repair
+                </button>
+                <button class="tab-btn" onclick="filterCategory('web-dev', this)">
+                    <ion-icon name="code-slash-outline"></ion-icon> Web & Software
+                </button>
+                <button class="tab-btn" onclick="filterCategory('embedded', this)">
+                    <ion-icon name="hardware-chip-outline"></ion-icon> IoT & Embedded
+                </button>
+                <button class="tab-btn" onclick="filterCategory('networking', this)">
+                    <ion-icon name="wifi-outline"></ion-icon> Networking
+                </button>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <main class="services-container">
+
+            <!-- CATEGORY A: TECH SUPPORT & REPAIR (IT SupportS) -->
+            <div class="category-group" data-category="tech-support">
+                <h3 class="category-title">
+                    <ion-icon name="build-outline"></ion-icon> Tech Support, Repair & Maintenance
+                </h3>
+                <div class="cards-grid">
+
+                    <div class="service-card">
+                        <div class="card-icon"><ion-icon name="desktop-outline"></ion-icon></div>
+                        <h4>OS Installation, Setup & Upgrades</h4>
+                        <p>Clean installation, recovery, and dual-boot configurations for Windows and Linux operating systems.</p>
+                        <div class="card-footer">
+                            <span class="poster-tag">IT Support</span>
+                            <button class="card-btn" onclick="openBookingModal('OS Installation')">Request <ion-icon name="arrow-forward-outline"></ion-icon></button>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="card-icon"><ion-icon name="briefcase-outline"></ion-icon></div>
+                        <h4>Office Installation & Activation</h4>
+                        <p>Complete Microsoft Office suite setup, configuration, activation, and performance troubleshooting.</p>
+                        <div class="card-footer">
+                            <span class="poster-tag">IT Support</span>
+                            <button class="card-btn" onclick="openBookingModal('Office Installation')">Request <ion-icon name="arrow-forward-outline"></ion-icon></button>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="card-icon"><ion-icon name="download-outline"></ion-icon></div>
+                        <h4>Software Installation</h4>
+                        <p>Essential academic, development, graphic design, and engineering software setups with required dependencies.</p>
+                        <div class="card-footer">
+                            <span class="poster-tag">IT Support</span>
+                            <button class="card-btn" onclick="openBookingModal('Software Installation')">Request <ion-icon name="arrow-forward-outline"></ion-icon></button>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="card-icon"><ion-icon name="sync-outline"></ion-icon></div>
+                        <h4>Driver Installation & Updates</h4>
+                        <p>Resolves missing audio, Wi-Fi, graphics, or display drivers for maximum laptop performance.</p>
+                        <div class="card-footer">
+                            <span class="poster-tag">IT Support</span>
+                            <button class="card-btn" onclick="openBookingModal('Driver Installation')">Request <ion-icon name="arrow-forward-outline"></ion-icon></button>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="card-icon"><ion-icon name="laptop-outline"></ion-icon></div>
+                        <h4>PC Troubleshooting</h4>
+                        <p>Deep hardware and software diagnosis for freezing laptops, slow startup, or system crash errors.</p>
+                        <div class="card-footer">
+                            <span class="poster-tag">IT Support</span>
+                            <button class="card-btn" onclick="openBookingModal('PC Troubleshooting')">Request <ion-icon name="arrow-forward-outline"></ion-icon></button>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="card-icon"><ion-icon name="cloud-upload-outline"></ion-icon></div>
+                        <h4>Backup & Data Recovery</h4>
+                        <p>Safe recovery of corrupted files, lost documents, formatted hard drives, or external storage drives.</p>
+                        <div class="card-footer">
+                            <span class="poster-tag">IT Support</span>
+                            <button class="card-btn" onclick="openBookingModal('Backup & Recovery')">Request <ion-icon name="arrow-forward-outline"></ion-icon></button>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="card-icon"><ion-icon name="shield-checkmark-outline"></ion-icon></div>
+                        <h4>Malware & Virus Removal</h4>
+                        <p>Detection and removal of dangerous adware, spyware, trojans, and background resource hijackers.</p>
+                        <div class="card-footer">
+                            <span class="poster-tag">IT Support</span>
+                            <button class="card-btn" onclick="openBookingModal('Malware Removal')">Request <ion-icon name="arrow-forward-outline"></ion-icon></button>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="card-icon"><ion-icon name="key-outline"></ion-icon></div>
+                        <h4>Password Reset & Recovery</h4>
+                        <p>Secure local admin password recovery and unlock assistance for locked Windows and user accounts.</p>
+                        <div class="card-footer">
+                            <span class="poster-tag">IT Support</span>
+                            <button class="card-btn" onclick="openBookingModal('Password Reset')">Request <ion-icon name="arrow-forward-outline"></ion-icon></button>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="card-icon"><ion-icon name="speedometer-outline"></ion-icon></div>
+                        <h4>PC Performance Optimization</h4>
+                        <p>SSD upgrades, thermal paste re-application, RAM upgrade advice, and startup program cleanup.</p>
+                        <div class="card-footer">
+                            <span class="poster-tag">IT Support</span>
+                            <button class="card-btn" onclick="openBookingModal('PC Optimization')">Request <ion-icon name="arrow-forward-outline"></ion-icon></button>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="card-icon"><ion-icon name="school-outline"></ion-icon></div>
+                        <h4>Computer Skills Training</h4>
+                        <p>Hands-on practical computer literacy, basics of coding, software tools, and ICT lab practice.</p>
+                        <div class="card-footer">
+                            <span class="poster-tag">IT Support</span>
+                            <button class="card-btn" onclick="openBookingModal('Skills Training')">Request <ion-icon name="arrow-forward-outline"></ion-icon></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CATEGORY B: WEB DEVELOPMENT -->
+            <div class="category-group" data-category="web-dev">
+                <h3 class="category-title">
+                    <ion-icon name="code-slash-outline"></ion-icon> Web Development & Custom Software
+                </h3>
+                <div class="cards-grid">
+
+                    <div class="service-card">
+                        <div class="card-icon"><ion-icon name="browsers-outline"></ion-icon></div>
+                        <h4>Custom Web Applications</h4>
+                        <p>Responsive student portals, business management dashboards, GPA tools, and web databases.</p>
+                        <div class="card-footer">
+                            <button class="card-btn" onclick="openBookingModal('Custom Web App')">Request Quote <ion-icon name="arrow-forward-outline"></ion-icon></button>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="card-icon"><ion-icon name="easel-outline"></ion-icon></div>
+                        <h4>School Management Portals</h4>
+                        <p>Tailored portals for secondary schools to handle grading, student records, and report generation.</p>
+                        <div class="card-footer">
+                            <button class="card-btn" onclick="openBookingModal('School Management Portal')">Request Quote <ion-icon name="arrow-forward-outline"></ion-icon></button>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="card-icon"><ion-icon name="cart-outline"></ion-icon></div>
+                        <h4>E-Commerce & Payment Integration</h4>
+                        <p>Online store development integrated with Mobile Money (MTN/Airtel) and local payment options.</p>
+                        <div class="card-footer">
+                            <button class="card-btn" onclick="openBookingModal('E-Commerce Setup')">Request Quote <ion-icon name="arrow-forward-outline"></ion-icon></button>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="card-icon"><ion-icon name="search-outline"></ion-icon></div>
+                        <h4>Optimization & Local SEO</h4>
+                        <p>Speed up slow websites, fix mobile layout bugs, and optimize your business for local online search.</p>
+                        <div class="card-footer">
+                            <button class="card-btn" onclick="openBookingModal('SEO & Web Optimization')">Request Quote <ion-icon name="arrow-forward-outline"></ion-icon></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CATEGORY C: EMBEDDED SYSTEMS & IOT -->
+            <div class="category-group" data-category="embedded">
+                <h3 class="category-title">
+                    <ion-icon name="hardware-chip-outline"></ion-icon> Embedded Systems & IoT Innovations
+                </h3>
+                <div class="cards-grid">
+
+                    <div class="service-card">
+                        <div class="card-icon"><ion-icon name="extension-puzzle-outline"></ion-icon></div>
+                        <h4>Microcontroller Solutions</h4>
+                        <p>Circuit design and programming using Arduino, ESP32 (Wi-Fi/Bluetooth), and Raspberry Pi hardware.</p>
+                        <div class="card-footer">
+                            <button class="card-btn" onclick="openBookingModal('Microcontroller Solution')">Request <ion-icon name="arrow-forward-outline"></ion-icon></button>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="card-icon"><ion-icon name="flask-outline"></ion-icon></div>
+                        <h4>Final Year Research Prototyping</h4>
+                        <p>Technical guidance, sensor integration, and functional hardware prototypes for university research.</p>
+                        <div class="card-footer">
+                            <button class="card-btn" onclick="openBookingModal('Research Prototyping')">Request <ion-icon name="arrow-forward-outline"></ion-icon></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CATEGORY D: NETWORKING & INFRASTRUCTURE -->
+            <div class="category-group" data-category="networking">
+                <h3 class="category-title">
+                    <ion-icon name="wifi-outline"></ion-icon> Networking & IT Infrastructure
+                </h3>
+                <div class="cards-grid">
+
+                    <div class="service-card">
+                        <div class="card-icon"><ion-icon name="router-outline"></ion-icon></div>
+                        <h4>Wi-Fi & Router Configuration</h4>
+                        <p>Small office and home Wi-Fi expansion, router setup, bandwidth management, and security passwords.</p>
+                        <div class="card-footer">
+                            <button class="card-btn" onclick="openBookingModal('Wi-Fi Configuration')">Request <ion-icon name="arrow-forward-outline"></ion-icon></button>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="card-icon"><ion-icon name="git-network-outline"></ion-icon></div>
+                        <h4>LAN Cabling & Network Setup</h4>
+                        <p>Structured Ethernet cabling, network switch installation, and office network troubleshooting.</p>
+                        <div class="card-footer">
+                            <button class="card-btn" onclick="openBookingModal('LAN Cabling Setup')">Request <ion-icon name="arrow-forward-outline"></ion-icon></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Booking / Request Service Modal -->
+    <div class="modal-overlay" id="bookingModal">
+        <div class="modal-card">
+            <button class="close-modal" onclick="closeBookingModal()">
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="modal-header">
+                <h3>Request Service</h3>
+                <p>Fill in your details below and J-CORE LABS will reach out immediately.</p>
+            </div>
+            <form id="serviceForm" onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                    <label for="serviceName">Selected Service</label>
+                    <input type="text" id="serviceName" class="form-control" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="clientName">Your Full Name</label>
+                    <input type="text" id="clientName" class="form-control" placeholder="e.g. Alex K." required>
+                </div>
+                <div class="form-group">
+                    <label for="clientContact">Phone / WhatsApp Number</label>
+                    <input type="tel" id="clientContact" class="form-control" placeholder="+256 700 000 000" required>
+                </div>
+                <div class="form-group">
+                    <label for="serviceDetails">Additional Details / Laptop Model</label>
+                    <textarea id="serviceDetails" class="form-control" rows="3" placeholder="Briefly describe your issue or requirements..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+                    <ion-icon name="paper-plane-outline"></ion-icon> Submit Service Request
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <ion-icon name="hardware-chip-outline"></ion-icon>
+                        </div>
+                        J-Core <span>Labs</span>
+                    </a>
+                    <p>Driven by intelligent innovation, quality software development, practical hardware repair, and tech education.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+                        <a href="#" class="social-icon" aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#" class="social-icon" aria-label="WhatsApp"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="#home">Home</a>
+                        <a href="#services">Services</a>
+                        <a href="#academy">J-Core Academy</a>
+                        <a href="#store">Accessory Store</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <div class="footer-links">
+                        <a href="#services">Web Applications</a>
+                        <a href="#services">Embedded IoT Solutions</a>
+                        <a href="#services">Networking & Wi-Fi</a>
+                        <a href="#services">Hardware Diagnostics</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <div class="footer-links">
+                        <a href="#"><ion-icon name="person-outline"></ion-icon> Ayebale Joshua</a>
+                        <a href="mailto:info@jcorelabs.com"><ion-icon name="mail-outline"></ion-icon> info@jcorelabs.com</a>
+                        <a href="#"><ion-icon name="call-outline"></ion-icon> Community Support Line</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026  J-Core Labs. All rights reserved. Founded by Ayebale Joshua.</p>
+                <p>Designed with pure HTML, CSS, & JavaScript.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

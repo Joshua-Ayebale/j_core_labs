@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JCore Labs | Intelligent Innovation & Tech Solutions</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Ionicons Script CDN -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js" defer></script>
+    
+    
+    
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+        <ion-icon name="sparkles-outline"></ion-icon>
+        <span>Future Expansion: J-Core Computer Accessories & Hardware Hub</span>
+        <span class="badge">Coming Soon</span>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <!-- Brand Logo -->
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <img src="assets/jcore-logo.png" alt="JCore Labs Logo Placeholder" class="logo-img">
+                </div>
+                J-Core Labs
+            </a>
+
+            <!-- Desktop Menu Links -->
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="service.html" class="nav-link">Services</a></li>
+                <li><a href="academy.html" class="nav-link">J-Core Academy</a></li>
+                <li><a href="comingsoon.html" class="nav-link">Accessory Store</a></li>
+                <li><a href="#testimonials" class="nav-link">About & Reviews</a></li>
+            </ul>
+
+            <!-- CTA Button -->
+            <div class="nav-cta">
+                <a href="#contact" class="btn btn-primary">
+                    <ion-icon name="flash-outline"></ion-icon>
+                    Get Started
+                </a>
+            </div>
+
+            <!-- Hamburger Button for Mobile -->
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+                <ion-icon name="menu-outline" id="menuIcon"></ion-icon>
+            </button>
+        </div>
+        
+    </nav>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="mobile-drawer" id="mobileDrawer">
+        <a href="#home" class="nav-link drawer-item">Home</a>
+        <a href="service.html" class="nav-link drawer-item">Services</a>
+        <a href="academy.html" class="nav-link drawer-item">J-Core Academy</a>
+        <a href="comingsoon.html" class="nav-link drawer-item">Accessory Store</a>
+        <a href="#testimonials" class="nav-link drawer-item">About & Reviews</a>
+        <a href="#contact" class="btn btn-primary" style="margin-top: 1rem;">
+            <ion-icon name="flash-outline"></ion-icon>
+            Request Service
+        </a>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="tagline-badge">
+                        <ion-icon name="code-slash-outline"></ion-icon>
+                        Founded by <a href="#">Ayebale Joshua</a> | <span class="badge">CS-Major</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Intelligent Innovation & <span>Practical Tech Solutions</span>
+                    </h1>
+                    <p class="hero-description">
+                        Empowering students, schools, small businesses, and community members through modern web applications, embedded IoT systems, networking, hardware repairs, and STEM education.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#services" class="btn btn-primary">
+                            <ion-icon name="rocket-outline"></ion-icon>
+                            Explore Services
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <ion-icon name="build-outline"></ion-icon>
+                            Book Repair
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <ion-icon name=""></ion-icon>
+                            Partner With Us
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline">
+                            <ion-icon name=""></ion-icon>
+                            Request Training
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="hero-image-wrapper">
+                        <!-- Image Placeholder for Hero Showcase -->
+                        <img src="assets/jcore-logo.png" alt="J-Core Labs Logo" class="hero-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Audience Segmentation / Target Community -->
+        <section class="segmentation">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Who We Serve</span>
+                    <h2 class="section-title">Tailored Solutions For Every Need</h2>
+                    <p class="section-desc">We bridge the gap between academic theory and real-world technology application.</p>
+                </div>
+
+                <div class="segment-grid">
+                    <!-- Segment 1 -->
+                    <div class="segment-card">
+                        <div class="segment-icon">
+                            <ion-icon name="school-outline"></ion-icon>
+                        </div>
+                        <h3>Campus & Students</h3>
+                        <p>Project assistance, GPA/utility web portals, OS/Software activation, laptop maintenance, and hands-on skill development.</p>
+                        <a href="#services" class="segment-link">
+                            Learn More <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </a>
+                    </div>
+
+                    <!-- Segment 2 -->
+                    <div class="segment-card">
+                        <div class="segment-icon">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </div>
+                        <h3>Secondary Schools</h3>
+                        <p>STEM & ICT practical curriculum training tailored for the new national curriculum and school lab management.</p>
+                        <a href="#academy" class="segment-link">
+                            Explore Curriculum <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </a>
+                    </div>
+
+                    <!-- Segment 3 -->
+                    <div class="segment-card">
+                        <div class="segment-icon">
+                            <ion-icon name="business-outline"></ion-icon>
+                        </div>
+                        <h3>Businesses & Homes</h3>
+                        <p>Small office/home Wi-Fi networking, custom business websites, digital catalogs, and hardware diagnostics.</p>
+                        <a href="#services" class="segment-link">
+                            View Solutions <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Services Section -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Our Expertise</span>
+                    <h2 class="section-title">Comprehensive Tech Offerings</h2>
+                    <p class="section-desc">From code to circuit boards, JCore Labs delivers reliable end-to-end technical services.</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1: Web Development -->
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <ion-icon name="code-slash-outline"></ion-icon>
+                            </div>
+                            <h3 class="service-title">Web & App Development</h3>
+                        </div>
+                        <p class="service-desc">Custom landing pages, web applications, student portfolios, and business catalogs optimized for mobile devices.</p>
+                        <ul class="service-list">
+                            <li><ion-icon name="checkmark-circle-outline"></ion-icon> Custom Front-end & Dynamic Apps</li>
+                            <li><ion-icon name="checkmark-circle-outline"></ion-icon> Mobile Responsive UI/UX Design</li>
+                            <li><ion-icon name="checkmark-circle-outline"></ion-icon> Speed & SEO Optimization</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 2: Embedded Systems -->
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <ion-icon name="hardware-chip-outline"></ion-icon>
+                            </div>
+                            <h3 class="service-title">Embedded Systems & IoT</h3>
+                        </div>
+                        <p class="service-desc">Microcontroller circuit prototyping (Arduino, ESP32, Raspberry Pi) for academic research and smart automation.</p>
+                        <ul class="service-list">
+                            <li><ion-icon name="checkmark-circle-outline"></ion-icon> Custom Circuit Design & Assembly</li>
+                            <li><ion-icon name="checkmark-circle-outline"></ion-icon> Sensor Integration & Automation</li>
+                            <li><ion-icon name="checkmark-circle-outline"></ion-icon> Student Final-Year IoT Projects</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 3: Networking -->
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <ion-icon name="wifi-outline"></ion-icon>
+                            </div>
+                            <h3 class="service-title">Networking & Wi-Fi</h3>
+                        </div>
+                        <p class="service-desc">Reliable LAN cabling, Wi-Fi expansion, router configuration, and network troubleshooting for small offices & homes.</p>
+                        <ul class="service-list">
+                            <li><ion-icon name="checkmark-circle-outline"></ion-icon> Router & Access Point Setup</li>
+                            <li><ion-icon name="checkmark-circle-outline"></ion-icon> Network Security & Speed Checks</li>
+                            <li><ion-icon name="checkmark-circle-outline"></ion-icon> Structured Office Cabling</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 4: Repair & Maintenance -->
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <ion-icon name="build-outline"></ion-icon>
+                            </div>
+                            <h3 class="service-title">Computer Repair & Upgrade</h3>
+                        </div>
+                        <p class="service-desc">Full hardware diagnostics, RAM/SSD performance upgrades, screen replacements, and thermal cleaning.</p>
+                        <ul class="service-list">
+                            <li><ion-icon name="checkmark-circle-outline"></ion-icon> SSD Speed Boost Upgrades</li>
+                            <li><ion-icon name="checkmark-circle-outline"></ion-icon> Hardware Diagnostic & Repairs</li>
+                            <li><ion-icon name="checkmark-circle-outline"></ion-icon> Overheating & Fan Maintenance</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 5: OS & Software Installation -->
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <ion-icon name="desktop-outline"></ion-icon>
+                            </div>
+                            <h3 class="service-title">OS & Software Setup</h3>
+                        </div>
+                        <p class="service-desc">Clean OS installations (Windows/Linux), driver configuration, genuine software activations, and virus removal.</p>
+                        <ul class="service-list">
+                            <li><ion-icon name="checkmark-circle-outline"></ion-icon> Windows & Linux OS Setup</li>
+                            <li><ion-icon name="checkmark-circle-outline"></ion-icon> Developer Tools & IDE Config</li>
+                            <li><ion-icon name="checkmark-circle-outline"></ion-icon> Malware & Virus Cleaning</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 6: JCore Academy -->
+                    <div class="service-card" id="academy">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <ion-icon name="easel-outline"></ion-icon>
+                            </div>
+                            <h3 class="service-title">J-Core STEM Academy</h3>
+                        </div>
+                        <p class="service-desc">Hands-on practical training for high school students tailored specifically for the modern ICT and technology curriculum.</p>
+                        <ul class="service-list">
+                            <li><ion-icon name="checkmark-circle-outline"></ion-icon> Practical Coding & Logic Basics</li>
+                            <li><ion-icon name="checkmark-circle-outline"></ion-icon> Computer Hardware Foundations</li>
+                            <li><ion-icon name="checkmark-circle-outline"></ion-icon> High School Workshop Sessions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accessories Store Teaser Banner -->
+        <section class="store-teaser" id="store">
+            <div class="container">
+                <div class="teaser-box">
+                    <span class="teaser-badge">Future Expansion</span>
+                    <h2 class="teaser-title">J-Core Tech Accessories Hub</h2>
+                    <p class="teaser-desc">
+                        We are preparing to launch an integrated online and local accessory store! Soon you'll be able to order vetted laptops, smartphones, SSDs, RAM, microcontrollers, and repair tools directly through JCore Labs.
+                    </p>
+                    <div class="teaser-tags">
+                        <span class="teaser-tag"><ion-icon name="laptop-outline"></ion-icon> Laptops & PCs</span>
+                        <span class="teaser-tag"><ion-icon name="phone-portrait-outline"></ion-icon> Smartphones</span>
+                        <span class="teaser-tag"><ion-icon name="disc-outline"></ion-icon> Storage & Upgrades</span>
+                        <span class="teaser-tag"><ion-icon name="extension-puzzle-outline"></ion-icon> IoT Components</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials & Trust Section -->
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Community Feedback</span>
+                    <h2 class="section-title">What Our Clients & Peers Say</h2>
+                    <p class="section-desc">Building trust through quality service and practical mentorship.</p>
+                </div>
+
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <ion-icon name="quote-outline" class="quote-icon"></ion-icon>
+                        <p class="testimonial-text">"J-core Team helped set up our school's ICT practical sessions. The students were thrilled to build actual electronic circuits and write basic code."</p>
+                        <div class="author-info">
+                            <div class="author-avatar">ST</div>
+                            <div class="author-details">
+                                <h4>Secondary School ICT Teacher</h4>
+                                <p>High School Mentorship Partner</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <ion-icon name="quote-outline" class="quote-icon"></ion-icon>
+                        <p class="testimonial-text">"My laptop was extremely slow during exam week. J-Core Labs upgraded my hard drive to an SSD and reinstalled OS within hours. Outstanding support!"</p>
+                        <div class="author-info">
+                            <div class="author-avatar">AK</div>
+                            <div class="author-details">
+                                <h4>Alex K.</h4>
+                                <p>Law Student</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <ion-icon name="quote-outline" class="quote-icon"></ion-icon>
+                        <p class="testimonial-text">"The Wi-Fi network setup for our local office is now seamless. J-Core Labs provided fast, transparent service at an accessible community rate."</p>
+                        <div class="author-info">
+                            <div class="author-avatar">BM</div>
+                            <div class="author-details">
+                                <h4>Business Manager</h4>
+                                <p>Local Enterprise Client</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <ion-icon name="hardware-chip-outline"></ion-icon>
+                        </div>
+                        J-Core <span>Labs</span>
+                    </a>
+                    <p>Driven by intelligent innovation, quality software development, practical hardware repair, and tech education.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+                        <a href="#" class="social-icon" aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#" class="social-icon" aria-label="WhatsApp"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="#home">Home</a>
+                        <a href="#services">Services</a>
+                        <a href="#academy">J-Core Academy</a>
+                        <a href="#store">Accessory Store</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <div class="footer-links">
+                        <a href="#services">Web Applications</a>
+                        <a href="#services">Embedded IoT Solutions</a>
+                        <a href="#services">Networking & Wi-Fi</a>
+                        <a href="#services">Hardware Diagnostics</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <div class="footer-links">
+                        <a href="#"><ion-icon name="person-outline"></ion-icon> Ayebale Joshua</a>
+                        <a href="mailto:info@jcorelabs.com"><ion-icon name="mail-outline"></ion-icon> info@jcorelabs.com</a>
+                        <a href="#"><ion-icon name="call-outline"></ion-icon> Community Support Line</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026  J-Core Labs. All rights reserved. Founded by Ayebale Joshua.</p>
+                <p>Designed with pure HTML, CSS, & JavaScript.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
